@@ -1,0 +1,23 @@
+{
+  "plugins": [
+    "prettier-plugin-tailwindcss",
+    "prettier-plugin-organize-imports"
+  ],
+  "singleQuote": true,
+  "trailingComma": "all",
+  "overrides": [
+    {
+      "files": ["*.json5"],
+      "options": {
+        "singleQuote": false,
+        "quoteProps": "preserve"
+      }
+    },
+    {
+      "files": ["*.yml"],
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ]
+}
