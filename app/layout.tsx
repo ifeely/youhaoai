@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import type React from 'react';
 import { ThemeProvider } from '~/components/theme-provider';
+import { Analytics } from '~/components/51la';
 import '~/styles/globals.css';
 
 export const metadata: Metadata = {
@@ -26,6 +27,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body>
         <ThemeProvider>{children}</ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
